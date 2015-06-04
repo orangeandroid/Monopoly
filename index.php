@@ -1,9 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","username","password","database");
-// Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+include 'conn.php';
 echo "
 <html lang=\"en\" class=\"no-js\">
 	<head>
