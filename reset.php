@@ -1,5 +1,9 @@
 <?php
-include 'conn.php';
+$con=mysqli_connect("localhost","axel_moneybags","3^PVtkW]dHw,","axel_monopoly");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
 $resetter = mysqli_real_escape_string($con, $_POST['Resetter']);
 
